@@ -39,13 +39,24 @@ function dramaMoviesScore(movies) {
 
 
 // Iteration 5: Ordering by year - Order by year, ascending (in growing order)
-function orderByYear() {}
+
+function orderByYear(movies) {
+  let clone = movies.map(movies => ({...movies}));
+  movies.sort((a, b) => a.year - b.year);
+  return clone;
+}
+
 
 // Iteration 6: Alphabetic Order - Order by title and print the first 20 titles
-function orderAlphabetically() {}
+function orderAlphabetically(movies) {
+  const list = movies.sort((a, b) => a.title - b.title);
+  return list; 
+}
 
 // BONUS - Iteration 7: Time Format - Turn duration of the movies from hours to minutes
-function turnHoursToMinutes() {}
+function turnHoursToMinutes(movies) {
+  
+}
 
 // BONUS - Iteration 8: Best yearly score average - Best yearly score average
 function bestYearAvg() {}
