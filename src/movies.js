@@ -84,7 +84,7 @@ function orderAlphabetically(movies) {
 function turnHoursToMinutes(movies) {
   const hToMin = [...movies];
 
-  
+
   return hToMin;
 }
 
@@ -94,7 +94,7 @@ function bestYearAvg(movies) {
 
   const bestYear = [...movies];
 
-  return "The best year was " + year + "with an average score of " + aveScore;
+  return "The best year was " + 'year' + "with an average score of " + 'aveScore';
 }
 
 
